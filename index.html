@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="nav-button" data-section="dashboard">Dashboard</button>
+            <button class="nav-button" data-section="events">Evenimente</button>
+            <button class="nav-button" data-section="staff">Staff</button>
+            <button class="nav-button" data-section="tasks">Sarcini</button>
+            <button class="nav-button" data-section="reports">Rapoarte</button>
+            <button class="nav-button" data-section="notifications">Notificări</button>
+            <button class="nav-button" data-section="messages">Mesagerie</button>
+        </nav>
+        <div class="user-actions">
+            <button id="loginButton">Logare</button>
+            <div class="dark-mode-toggle">
+                <div class="theme-icons">
+                    <span class="sun">🌞</span>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="darkModeToggle">
+                        <span class="slider"></span>
+                    </label>
+                    <span class="moon">🌙</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1 id="sectionTitle">Dashboard</h1>
+        <div class="content">Conținutul secțiunii va apărea aici.</div>
+    </main>
+</body>
+</html>
